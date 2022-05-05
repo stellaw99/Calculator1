@@ -1,0 +1,9 @@
+{
+    "editor.language.colorizedBracketPairs": true,
+    "[javascript]": {
+        "editor.autoClosingBrackets": "always",
+        "editor.autoClosingQuotes": "always",
+        "editor.semanticHighlighting.enabled": true
+    },
+    "editor.language.brackets": true
+}
