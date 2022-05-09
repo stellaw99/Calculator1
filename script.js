@@ -35,7 +35,7 @@ class Calculator {
     let computation
     const prev = parseFloat(this.previousOperand)
     const current = parseFloat(this.currentOperand)
-    if (isNaN(prev) || isNaN(current)) return
+    if (isNaN(prev) || isNaN(current)) return 
     switch (this.operation) {
       case '+':
         computation = prev + current
@@ -64,26 +64,25 @@ getDisplayNumber(number); {
   let integerDisplay
   if (isNaN(integerDigits)) {
     integerDisplay = ''
-    else {
-      integerDisplay = integerDigits.toLocaleString('en', {maximumFractionDigits:0})
-    }
+  } else {
+    integerDisplay = integerDigits.toLocaleString('en', {maximumFractionDigits:0})
+  }
     if (decimalDigits != null) {
       return `${integerDisplay}.${integerDigits}`
-      else {
-        return integerDisplay
-      }
     }
-  }
+    else {
+      return integerDisplay
+    }
 }
 
   updateDisplay(); {
   this.currentOperandTextElement.innerText = this.getDisplayNumber(this.currentOperand)
   if (this.operation != null) {
     this.previousOperandTextElement.innerText = `${this.getDisplayNumber(this.previousOperand)} ${this.operation}`
+  }
     else {
       this.previousOperandTextElement.innerText = ''
     }
-  }
 }
           
   const numberButtons = document.querySelectorAll('[data-number]');
